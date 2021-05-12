@@ -1,23 +1,29 @@
+/*==== Importando a fonte do documento ====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
   --primary-color: #007AF3;
+  --primary-color-logo: black;
+  --primary-color-nav:  #fff;
+  --primary-color-body:  #F2F2F2;
+  --primary-color-link: #444444;
 }
 
 body {
-  background: #F2F2F2;
+  background: var(--primary-color-body);
   margin: 0;
   font-family: 'Poppins';
 }
 
 .navbar {
-  background: white;
+  background: var(--primary-color-nav);
   padding: 1em;
 }
 
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: var(--primary-color-logo);
   font-size: 1.2em;
 }
 
@@ -41,7 +47,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: var(--primary-color-link);
 }
 
 ul {
