@@ -1,5 +1,10 @@
-// Manipulando strings e Números
+// Manipulando string e Números
 
-//Transformar um número quebrado com 2 casas decimais e trocar pronto por virgula
-let number = 43582478.6587412
-console.log(number.toFixed(2).replace(".",",")) // o método to fixed devolve uma String
+// transforme letras em maiusculas em minusculas. e fazendo o oposto
+
+let phrase = "When tomorrow Come";
+console.log(phrase.toUpperCase())
+console.log(phrase.toLowerCas())
+//ou
+console.log(phrase.toLowerCase().toUpperCase())
+

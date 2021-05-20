@@ -26,3 +26,19 @@ let word = "Um dia vou trabalhar com desenvolvimento"
 console.log(word.length)
 let number = word.length
 console.log(String(number).length) //precisa converter o número em string pois, number não tem o método lenght
+
+// Manipulando strings e Números
+
+//Transformar um número quebrado com 2 casas decimais e trocar pronto por virgula
+let number = 43582478.6587412
+console.log(number.toFixed(2).replace(".",",")) // o método to fixed devolve uma String
+
+// Manipulando string e Números
+
+// transforme letras em maiusculas em minusculas. e fazendo o oposto
+
+let phrase = "When tomorrow Come";
+console.log(phrase.toUpperCase())
+console.log(phrase.toLowerCas())
+//ou
+console.log(phrase.toLowerCase().toUpperCase())
