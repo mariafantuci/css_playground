@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+h1 {
+    color: #a200ff;
+    font-size: 3rem;
+    background-color: aquamarine;
+    border: 9px dotted gray;
+    width: 50%;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid blue;
+    width: 50%;
+}
+
+p{
+    background-color: black;
+    color: white;
+}
+span{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ul{
+    font-size: 50px;
+    list-style-type: none;
+}
+ol{
+    font-size: 50px;
+    list-style: upper-latin;
+    margin-left: 40px;
+}
