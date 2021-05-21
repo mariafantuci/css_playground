@@ -1,4 +1,7 @@
-// verificar se o texto contém uma palavra específica
+// Manipulando Arrays
 
-let phrase = "I just wanna live"
-console.log(phrase.includes("amor")) //o método includes verifica se tem em uma frase, ela é case sensitive
+//criar Array com construtor
+let myArray = new Array('a', 'b', 'c')
+
+//
+let myArray = new Array(10) //cria o array com o length
