@@ -37,3 +37,38 @@ console.log(techs.splice(1, 1))
 let position = techs.indexOf('css')
 console.log(techs.splice(position, 1))
 
+// crie um algoritmo que transforme as notas do sistema número para o sistema de notas em caracteres a, b, c
+
+function getScore (score){
+    let scoreNumber = score;
+    let scoreChar = "";
+    if(scoreNumber >= 90){
+        scoreChar = 'A'
+    } else if(scoreNumber >= 80){
+        scoreChar = 'B'
+    }else if(scoreNumber >= 70){
+        scoreChar = 'C'
+    }else if(scoreNumber >= 60){
+        scoreChar = 'D'
+    }else{
+        scoreChar = 'F'
+    }
+    return scoreChar;
+  }
+  //let score = 91
+  //console.log('a nota em caracteres é ' + getScore(score))
+
+function conversionTemperature(temperature){
+    const celsiusExists = temperature.toUpperCase.includes('C')
+    const fahrenheiExists = temperature.toUpperCase.includes('F')
+    if(!celsiusExists || !fahrenheiExists){
+        throw new Error('Grau não identificado')
+    }
+    let formula = (fahrenhei) => (fahrenhei - 32) * 5/9
+    let degreeSign = 'C'
+}
+try {
+    conversionTemperature('90c')
+} catch (error) {
+    console.log(error.message)
+}

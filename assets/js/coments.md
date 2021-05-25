@@ -57,3 +57,55 @@ let phraseWithUnderscore = myArray.join("_") // o método join junta os indexes 
 
 let phrase = "I just wanna live"
 console.log(phrase.includes("amor")) //o método includes verifica se tem em uma frase, ela é case sensitive
+
+
+# Operadores de Procedencia
+# Operator precedence
+
+* grouping ()
+* negação e incremento ! ++ --
+* multiplicação e divisão * /
+* adição e subtração + -
+* relacional < <= > >=
+* igualdade == != === !==
+* AND &&
+* OR ||
+* condicional :?
+* assignment (atribuição) = += -= *=
+
+
+# estrutura de repetição
+# for (sabemos a quantidade de vezes que vai repetir)
+//break para a execução
+//continue pula a execução do momento
+* for(let i = 1; i <= 10; i++){
+    console.log('6' + 'x' + i + ' = ' + (6 * i))
+}
+
+# while não sabemos o momento da parada
+* let i = 0
+* while (i < 10){
+    console.log(i)
+    i++;
+}
+
+# for...of
+let name = 'maria'
+let names = ['harley', 'ivy', 'bob']
+for(let char of name) {
+    console.log(name) // mostra as letras separadas
+}
+for(let name of names) {
+    console.log(name) //mostra os nomes dentro do array
+}
+
+# for...in
+let person = {
+    name: 'jhon',
+    age: 64,
+    weight: 70.9,
+}
+for(let property in person){
+    console.log(property)
+    console.log(person.name)
+}

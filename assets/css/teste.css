@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 
-h1 {
-    color: #a200ff;
-    font-size: 3rem;
-    background-color: aquamarine;
-    border: 9px dotted gray;
-    width: 50%;
-}
+
 h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -41,4 +35,18 @@ ol{
 }
 #titulo-principal{
     margin-left: 5rem;
+}
+
+.titulo{
+    color: red;
+}
+/** regras de especificidade*/
+.titulo {
+    font-size: 5rem;
+    border: 5px solid red;
+    color: red;
+}
+.titulo-pagina {
+    border-style: double;
+    color: gray;
 }
