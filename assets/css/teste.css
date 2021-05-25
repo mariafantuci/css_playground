@@ -41,12 +41,38 @@ ol{
     color: red;
 }
 /** regras de especificidade*/
-.titulo {
+/*Explicando cascade e especificidade*/
+
+/* peso 0-2-0 */
+.titulo.titulo-pagina {
+    color: purple;
+}
+
+/* peso 1-0-0 */
+#titulo-principal {
+    color: yellowgreen;
+}
+
+/* peso 0-1-0 */
+.titulo-pagina {
     font-size: 5rem;
     border: 5px solid red;
     color: red;
+    margin-left: 4rem;
 }
-.titulo-pagina {
-    border-style: double;
-    color: gray;
+
+/* peso 0-1-0 */
+.titulo {
+    border-style: dashed;
+    color: green;
+    margin-left: 0rem;
 }
+
+/* 0-0-1 */
+/* se tiver !important o peso ficará 1-0-0-0, ou seja, sobrescreverá tudo*/
+h1 {
+    color: blue;
+     color: blue !important; /**/
+}
+
+

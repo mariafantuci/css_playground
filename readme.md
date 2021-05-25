@@ -50,3 +50,5 @@ inline > tag style > tag link
 * cuidade, evite o uso
 * não é considerado uma boa prática
 * quebra o fluxo natural da cascata
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
