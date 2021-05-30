@@ -187,3 +187,9 @@ ol{
 .nav-item:nth-child(n + 2 ){
     font-weight: bold;
 }
+
+.input[type="number"]{
+    font-size: 30px;
+    border-radius: 6px;
+    color:#c7bebebc;
+}
