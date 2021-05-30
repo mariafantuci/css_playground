@@ -70,9 +70,87 @@ ol{
 
 /* 0-0-1 */
 /* se tiver !important o peso ficará 1-0-0-0, ou seja, sobrescreverá tudo*/
-h1 {
+
+/*
+.nome {classe}
+#nome {id}
+*/
+
+/*
+* pseudo seletores no css começam com : 
+* ex: ::after :hover :link
+*/
+
+/*== Seletor Genérico ==*/
+.titulo-generico{
+    font-size: 40px;
+    color: #FF0000;
+}
+/*== Seletor Descendente Imediato Combinado (obrigatóriamente o filho) ==*/
+.pai > .filho{
+    font-size: 80px;
+    font-family: cursive;
+    color: #000000;
+}
+/*== Seletor Descendentes (não importa o nivel de especificação) ==*/
+.container-exemplo  .titulo-generico{
+    font-size: 80px;
+    color: #000000;
+}
+
+
+.meu-link{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: lightgray;
+    color: #FFFFFF;
+}
+
+/**
+* Formata para quando o mouse passar em cima
+*/
+.meu-link:hover{
+    font-size: 40px;
+    text-decoration: underline;
+    background-color:rgba(128, 128, 128, 0.452);
+}
+
+/**
+* Formata a cor para links que não foram visitados
+*/
+.meu-link:link{
     color: blue;
-     color: blue !important; /**/
+}
+/**
+* Formata a cor para links já visitados
+*/
+.meu-link:visited{
+    color: purple;
+}
+
+/**
+* é executado quando estamos precionando o elemente, segurando
+*/
+.meu-link:active{ 
+    font-size: 60px;
+    color: azure;
+}
+
+/**
+* ativado quando utilizado pelo tab, ou quando segura em cima do elemento, sobrescreve o active
+*/
+.meu-link:focus{
+    font-size: 90px;
+    color: orangered;
+}
+.input{
+    background-color: #f029F2;
+    font-size: 50px;
+    color: #ffffff;
+}
+.input:focus{
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
