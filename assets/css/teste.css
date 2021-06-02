@@ -193,3 +193,33 @@ ol{
     border-radius: 6px;
     color:#c7bebebc;
 }
+/***********************/
+
+
+.inicial {
+    background-color:rgba(128, 128, 128, 0.452);
+    color: #ffff;
+    display: block;
+    font-size: 1.2em;
+}
+.span-color{
+    color: #5294d1;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; /* por padrão é inline*/
+    width: 500px; /*elemento inline não tem a opção de width*/
+    height: 60px;/*elemento inline não tem a opção de height*/
+    margin-top: top 10px; /*não pega essa formatação*/
+    margin-left: 10px;
+
+    /*
+    elementos por padrão inline
+    <span>
+    <a>
+    <strong>
+    <em>
+
+    */
+}

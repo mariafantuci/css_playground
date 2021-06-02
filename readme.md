@@ -52,3 +52,12 @@ inline > tag style > tag link
 * quebra o fluxo natural da cascata
 
 https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+
+
+***********************************************
+# diferença entre o display block e o inline
+
+* o display block ocupa toda a largura da tela, e o inline, ocupa até onte está sendo utilizado (escrito), que o conteúdo utiliza
+
+# propriedades inline
+* span
