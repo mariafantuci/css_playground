@@ -61,3 +61,32 @@ https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
 
 # propriedades inline
 * span
+
+
+# Padding 
+distancia da borda até o conteúdo
+
+# margin 
+distancia da borda até o outro elemento
+
+# div 
+box-sizing: content-box; //vem por padrão
+Ele soma o valor do padding e o width e o height.
+OBS: Não soma o valor da Margin pois ela fica para fora do elemento.
+Já o box-sizing: border-box, quando adicionado um height e um width não soma, é o tamanho máximo.
+
+/**display: inline; quando é inline não aceita nem width em height**/
+    display: inline-block;
+# padding, margin e border 
+border: 1px solid #ccc; // coloca borda em todo os lados
+
+border 1px 2px solid #ccc; //coloca a borda de 1px top e bottom e 2px nos lados left e right
+
+/**Mas é possivel colocar separado**/
+border-top: 10px solid #000000;
+border-bottom: 1px dashed #000000;
+border-left: 14px solid #000000;
+border-right: 1px solid #000000;
+
+/**Ainda é possível utilizar a anotação com 4 valores**/
+border: 1px 2px 3px 4px; // é o mesmo que colocar 1px no top, 2px no right, 3px no bottom, e 4px no left.
