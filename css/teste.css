@@ -3,18 +3,28 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;/*padrão*/
+}
+body{
+    margin: 0;
+}
+
 h2{
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
     border: 3px solid blue;
-    width: 50%;
+    width: 50%;*/
 }
 
-p{
+/**p{
+    
     background-color: black;
     color: white;
 }
+**/
+
 span{
     font-size: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -234,8 +244,96 @@ ol{
     /**height: 50px; colocar a altura é perigoso, pois não fica automatico, não deixa ele fluido*/
     /* Coloca borda de 10px solida em todos os lados*/
     /*border: 10px solid #000000;*/
-
-    
     padding: 10px;
     margin: 10px;
+}
+
+.wrapper{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #221f22ea;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper p{
+    margin-top: 0;
+}
+
+.wrapper .principal{
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.wrapper  .paragrafo-texto{
+    /*clear: both;*/
+}
+.wrapper .secundario{
+    float: right;
+}
+.wrapper::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.wrapper-two{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #cb99d4bc;
+    width: 56rem;
+    margin: 20px auto;
+}
+
+.box-1{
+    height: 200px;
+    width: 33%;
+}
+.red{
+    background: #ff0000;
+    float: right;
+}
+.blue{
+    background: #0000ff;
+    float: right;
+}
+.gray{
+    background: #393b3d;
+    float: right;
+}
+.wrapper-two::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.wrapper-three{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #cb99d4bc;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper-three::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.servico{
+    width: 31%;
+    border: 1px solid #8485b3;
+    float: left;
+    min-height: 200px;
+    margin: 0 1px;
+    padding: 0 1px;
+}
+.wrapper-4{
+    border: 1px solid #0000ff;
+    padding: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+.filha{
+    position: fixed;
+    background: #393b3d;
+    padding: 20px;
+    top: 20px;
+    /**left: 20px;*/
+    bottom: 20px;
 }

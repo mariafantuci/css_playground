@@ -90,3 +90,8 @@ border-right: 1px solid #000000;
 
 /**Ainda é possível utilizar a anotação com 4 valores**/
 border: 1px 2px 3px 4px; // é o mesmo que colocar 1px no top, 2px no right, 3px no bottom, e 4px no left.
+
+/**para centralizar conteudo**/
+text-align: center;
+/**para centralizar elemento**/
+margin: 0 auto;//sem utilizar o flex-box
