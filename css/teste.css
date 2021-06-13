@@ -337,3 +337,63 @@ ol{
     /**left: 20px;*/
     bottom: 20px;
 }
+.wrapper-5{
+    width: 50%;
+}
+.resizable-img{
+    width: 100%;
+    height: auto;
+}
+/*
+* Fazendo quando é mobile first
+
+@media (min-width: 768px){
+    body{
+        background: #e2c3a2;
+    }
+}
+
+@media (min-width: 1023px){
+    body{
+        background: #615e5a;
+    }
+}
+
+@media (min-width: 1199px){
+    body{
+        background: #105e5a;
+    }
+}
+*/
+
+@media (max-width: 1200px){
+    body{
+        background: #e2c3a2;
+    }
+}
+@media (max-width: 1024px){
+    body{
+        background: #a2d7e4;
+    }
+    .servico{
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 760px){
+    body{
+        background: #5294d1;
+    }
+    .resizable-img{
+        display: none;
+    }
+    .servico{
+        width: 100%;
+        background: aqua;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background: #dfa0aa;
+    }
+}
