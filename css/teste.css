@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;/*padrão*/
+}
+body{
+    margin: 0;
+}
+
+h2{
+    /*font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid blue;
+    width: 50%;*/
+}
+
+/**p{
+    
+    background-color: black;
+    color: white;
+}
+**/
+
+span{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ul{
+    font-size: 50px;
+    list-style-type: none;
+}
+ol{
+    font-size: 50px;
+    list-style: upper-latin;
+    margin-left: 40px;
+}
+.conteudo{
+    margin-left: 2rem;
+}
+#titulo-principal{
+    margin-left: 5rem;
+}
+
+.titulo{
+    color: red;
+}
+/** regras de especificidade*/
+/*Explicando cascade e especificidade*/
+
+/* peso 0-2-0 */
+.titulo.titulo-pagina {
+    color: purple;
+}
+
+/* peso 1-0-0 */
+#titulo-principal {
+    color: yellowgreen;
+}
+
+/* peso 0-1-0 */
+.titulo-pagina {
+    font-size: 5rem;
+    border: 5px solid red;
+    color: red;
+    margin-left: 4rem;
+}
+
+/* peso 0-1-0 */
+.titulo {
+    border-style: dashed;
+    color: green;
+    margin-left: 0rem;
+}
+
+/* 0-0-1 */
+/* se tiver !important o peso ficará 1-0-0-0, ou seja, sobrescreverá tudo*/
+
+/*
+.nome {classe}
+#nome {id}
+*/
+
+/*
+* pseudo seletores no css começam com : 
+* ex: ::after :hover :link
+*/
+
+/*== Seletor Genérico ==*/
+.titulo-generico{
+    font-size: 40px;
+    color: #FF0000;
+}
+/*== Seletor Descendente Imediato Combinado (obrigatóriamente o filho) ==*/
+.pai > .filho{
+    font-size: 80px;
+    font-family: cursive;
+    color: #000000;
+}
+/*== Seletor Descendentes (não importa o nivel de especificação) ==*/
+.container-exemplo  .titulo-generico{
+    font-size: 80px;
+    color: #000000;
+}
+
+
+.meu-link{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: lightgray;
+    color: #FFFFFF;
+}
+
+/**
+* Formata para quando o mouse passar em cima
+*/
+.meu-link:hover{
+    font-size: 40px;
+    text-decoration: underline;
+    background-color:rgba(128, 128, 128, 0.452);
+}
+
+/**
+* Formata a cor para links que não foram visitados
+*/
+.meu-link:link{
+    color: blue;
+}
+/**
+* Formata a cor para links já visitados
+*/
+.meu-link:visited{
+    color: purple;
+}
+
+/**
+* é executado quando estamos precionando o elemente, segurando
+*/
+.meu-link:active{ 
+    font-size: 60px;
+    color: azure;
+}
+
+/**
+* ativado quando utilizado pelo tab, ou quando segura em cima do elemento, sobrescreve o active
+*/
+.meu-link:focus{
+    font-size: 90px;
+    color: orangered;
+}
+.input{
+    background-color: #f029F2;
+    font-size: 50px;
+    color: #ffffff;
+}
+.input:focus{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-menu {
+    border: 2px solid #5294d1;
+    list-style: none;
+}
+.nav-item { /**com a classe nav-item eu seleciono todos os itens*/
+    border: 2px dashed #FFFFFF;
+    background-color: #78777e0c;
+    margin-bottom: 5px;
+}
+
+/*
+* modifica o ultimo filho
+*/
+.nav-item:last-child {
+    margin-bottom: 0px;
+}
+/*
+* modifica o primeiro filho 
+*/
+.nav-item:first-child {
+    color:rgba(128, 128, 128, 0.452);
+}
+/*
+* modifica a partir do número de parametro
+*/
+.nav-item:nth-child(2) {
+    background-color: #e49a5d73;
+}
+/*
+* Modifica a partir do 2º filho
+*/
+.nav-item:nth-child(n + 2 ){
+    font-weight: bold;
+}
+
+.input[type="number"]{
+    font-size: 30px;
+    border-radius: 6px;
+    color:#c7bebebc;
+}
+/***********************/
+
+
+.inicial {
+    background-color:rgba(128, 128, 128, 0.452);
+    color: #ffff;
+    display: block;
+    font-size: 1.2em;
+}
+.span-color{
+    color: #5294d1;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; /* por padrão é inline*/
+    width: 500px; /*elemento inline não tem a opção de width*/
+    height: 60px;/*elemento inline não tem a opção de height*/
+    margin-top: top 10px; /*não pega essa formatação*/
+    margin-left: 10px;
+
+    /*
+    elementos por padrão inline
+    <span>
+    <a>
+    <strong>
+    <em>
+
+    */
+}
+
+/*Box Model**/
+.box{
+    background-color: #0000ff;
+    color:#FFFFFF;
+    weight: 50px;
+    /**height: 50px; colocar a altura é perigoso, pois não fica automatico, não deixa ele fluido*/
+    /* Coloca borda de 10px solida em todos os lados*/
+    /*border: 10px solid #000000;*/
+    padding: 10px;
+    margin: 10px;
+}
+
+.wrapper{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #221f22ea;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper p{
+    margin-top: 0;
+}
+
+.wrapper .principal{
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.wrapper  .paragrafo-texto{
+    /*clear: both;*/
+}
+.wrapper .secundario{
+    float: right;
+}
+.wrapper::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.wrapper-two{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #cb99d4bc;
+    width: 56rem;
+    margin: 20px auto;
+}
+
+.box-1{
+    height: 200px;
+    width: 33%;
+}
+.red{
+    background: #ff0000;
+    float: right;
+}
+.blue{
+    background: #0000ff;
+    float: right;
+}
+.gray{
+    background: #393b3d;
+    float: right;
+}
+.wrapper-two::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.wrapper-three{
+    /*por esse elemento ser uma div, o padrão dele é display: block;*/
+    font-size: 1.5rem;
+    background-color: #cb99d4bc;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper-three::after{
+    content: '';
+    display: table;/*poderia ser block*/
+    clear: both;
+}
+.servico{
+    width: 31%;
+    border: 1px solid #8485b3;
+    float: left;
+    min-height: 200px;
+    margin: 0 1px;
+    padding: 0 1px;
+}
+.wrapper-4{
+    border: 1px solid #0000ff;
+    padding: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+.filha{
+    position: fixed;
+    background: #393b3d;
+    padding: 20px;
+    top: 20px;
+    /**left: 20px;*/
+    bottom: 20px;
+}
+.wrapper-5{
+    width: 50%;
+}
+.resizable-img{
+    width: 100%;
+    height: auto;
+}
+/*
+* Fazendo quando é mobile first
+
+@media (min-width: 768px){
+    body{
+        background: #e2c3a2;
+    }
+}
+
+@media (min-width: 1023px){
+    body{
+        background: #615e5a;
+    }
+}
+
+@media (min-width: 1199px){
+    body{
+        background: #105e5a;
+    }
+}
+*/
+
+@media (max-width: 1200px){
+    body{
+        background: #e2c3a2;
+    }
+}
+@media (max-width: 1024px){
+    body{
+        background: #a2d7e4;
+    }
+    .servico{
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 760px){
+    body{
+        background: #5294d1;
+    }
+    .resizable-img{
+        display: none;
+    }
+    .servico{
+        width: 100%;
+        background: aqua;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background: #dfa0aa;
+    }
+}
